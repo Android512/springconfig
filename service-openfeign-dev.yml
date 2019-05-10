@@ -16,5 +16,5 @@ mybatis:
   
 
   application:
-    name: serviceopenfeign
+    name: service-openfeign
 msg: foo    
