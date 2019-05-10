@@ -7,4 +7,4 @@ server:
 spring:
   application:
     name: service-openfeign
-msg=foo    
+msg:foo    
