@@ -9,3 +9,11 @@ spring:
 mybatis:
   mapperLocations: classpath*:mybatis/mapper*.xml
   typeAliasesPackage: com.jk.model
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+spring:
+  application:
+    name: service-helloword
+msg: foo    
