@@ -17,5 +17,4 @@ eureka:
     name: service-helloword
   
 msg: fone   
-server:
-  port: 8763
+
