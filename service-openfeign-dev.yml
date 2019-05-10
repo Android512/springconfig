@@ -2,8 +2,19 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
-
 spring:
+  datasource:
+    name: mydb
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/user?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+mybatis:
+  mapperLocations: classpath*:mybatis/mapper*.xml
+  typeAliasesPackage: com.jk.model
+  
+
   application:
     name: service-openfeign
 msg: foo    
