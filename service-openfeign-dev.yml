@@ -6,7 +6,8 @@ spring:
   application:
     name: service-openfeign
 rabbitmq:
-    host: localhost:5672
+    host: localhost
     username: fsk
     password: 123
+    port: 5672
 msg: foo    
