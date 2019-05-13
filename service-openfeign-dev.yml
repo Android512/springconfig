@@ -5,4 +5,8 @@ eureka:
 spring:
   application:
     name: service-openfeign
+rabbitmq:
+    host: localhost:5672
+    username: fsk
+    password: 123
 msg: foo    
