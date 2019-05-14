@@ -5,9 +5,19 @@ eureka:
 spring:
   application:
     name: service-openfeign
+    
+  thymeleaf:
+    prefix: classpath:templates/
+    suffix: .html
+    mode: LEGACYHTML5
+    encoding: UTF-8
+    content-type: text/html
+    cache: false
+    
 rabbitmq:
     host: localhost
     username: fsk
     password: 123
     port: 5672
+   
 msg: foo    
