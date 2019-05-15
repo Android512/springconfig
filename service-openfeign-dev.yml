@@ -28,4 +28,4 @@ management:
   security:
     enabled: false
     
-msg: foo    
+msg: fooo  
