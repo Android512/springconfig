@@ -16,13 +16,7 @@ spring:
     password: root
     driver-class-name: com.mysql.jdbc.Driver
 
-  management:
-    endpoints:
-      web:
-        exposure:
-          include=*:
-    security:
-      enabled: false
+  
 
 mybatis:
   mapperLocations: classpath*:mybatis/mapper*.xml
