@@ -20,12 +20,6 @@ rabbitmq:
     password: 123
     port: 5672
     
-management:
-  endpoints:
-    web:
-      exposure:
-        include=*:
-  security:
-    enabled: false
+
     
 msg: foo  
