@@ -1,4 +1,9 @@
-spring:
+  rabbitmq:
+    host: localhost
+    username: fsk
+    password: 123
+    port: 5672
+
   datasource:
     name: mydb
     type: com.alibaba.druid.pool.DruidDataSource
@@ -6,6 +11,15 @@ spring:
     username: root
     password: root
     driver-class-name: com.mysql.jdbc.Driver
+
+  management:
+    endpoints:
+      web:
+        exposure:
+          include=*:
+    security:
+      enabled: false
+
 mybatis:
   mapperLocations: classpath*:mybatis/mapper*.xml
   typeAliasesPackage: com.jk.model
@@ -13,8 +27,4 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
-  application:
-    name: service-helloword
-  
-msg: fone   
 
